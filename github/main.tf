@@ -1,3 +1,5 @@
+# Notes: To destroy a resource in terraform: terraform destroy -target github_repository.example1
+#         To create a resource in terraform: terraform apply
 
 # Configure the GitHub Provider
 terraform {
@@ -17,6 +19,16 @@ provider "github" {
 
 # Create a repository
 
-resource "github_repository" "examplerepo" {
-  name = "examplerepo"
+resource "github_repository" "example1" {
+  name = "example1"
+  description = "My awesome web page"
+  visibility  = "private"
+
+#   pages {
+#     source {
+#       branch = "master"
+#       path   = "/docs"
+#     }
+#   }
+
 }
