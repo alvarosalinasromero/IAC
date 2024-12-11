@@ -1,2 +1,3 @@
 # Ignore file logs
-*.terraform
+.terraform*
+terraform*
