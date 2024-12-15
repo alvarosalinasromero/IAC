@@ -24,3 +24,5 @@ resource "aws_vpc_security_group_ingress_rule" "https" {
   ip_protocol       = var.sg_protocol
   to_port           = var.sg_port_https
 }
+
+#terraform plan -var-file="common.tfvars"
