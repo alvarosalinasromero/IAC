@@ -10,7 +10,7 @@ resource "aws_security_group" "newsg" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "http" {
-  security_group_id = aws_security_group.http.id
+  security_group_id = aws_security_group.newsg.id
   cidr_ipv4         = var.sg_ip
   from_port         = var.sg_port_http
   ip_protocol       = var.sg_protocol
@@ -18,7 +18,7 @@ resource "aws_vpc_security_group_ingress_rule" "http" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "https" {
-  security_group_id = aws_security_group.https.id
+  security_group_id = aws_security_group.newsg.id
   cidr_ipv4         = var.sg_ip
   from_port         = var.sg_port_https
   ip_protocol       = var.sg_protocol
