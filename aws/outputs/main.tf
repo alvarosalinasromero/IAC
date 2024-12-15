@@ -11,5 +11,5 @@ resource "aws_security_group" "newsg" {
 
 # adding output
 output "security_group_id" {
-  value = aws_security_group.newsg.id
+  value = aws_security_group.newsg.name
 }
