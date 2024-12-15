@@ -6,7 +6,7 @@ variable "sg_port_http" {
     default = 80
 }
 
-variable "sg_port_http" {
+variable "sg_port_https" {
     default = 443
 }
 
