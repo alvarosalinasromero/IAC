@@ -15,7 +15,7 @@ resource "aws_security_group" "allow_tls" {
 # inbound rule to allow traffic with elastic ip
 resource "aws_vpc_security_group_ingress_rule" "sgnew" {
   security_group_id = aws_security_group.sgnew.id
-  cidr_ipv4         = "${aws_eip.ipstatic.public_ip}/32" # aws_eip.ipstatic.public_ip
+  cidr_ipv4         = "${aws_eip.ipstatic.public_ip}/32"
   from_port         = 80
   ip_protocol       = "tcp"
   to_port           = 80
