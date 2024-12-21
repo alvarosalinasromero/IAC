@@ -4,5 +4,5 @@
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
-shared.tfvars
+*shared.tfvars
 .token
