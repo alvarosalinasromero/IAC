@@ -12,5 +12,14 @@ resource "aws_instance" "server" {
   tags = {
     Name = "server-${count.index}"
   }
+}
 
+variable "users" {
+  type = list
+  default = ["alvaro", "Bob"]
+}
+
+resource "aws_iam_user" "users" {
+  name = var.users[count.index]
+  count = 2  
 }
