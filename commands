@@ -1,0 +1,6 @@
+
+terraform init
+terraform plan
+terraform apply -auto-approve
+terraform apply -replace="aws_instance.server2"
+terraform destroy -auto-approve
