@@ -4,3 +4,6 @@ terraform plan
 terraform apply -auto-approve
 terraform apply -replace="aws_instance.server2"
 terraform destroy -auto-approve
+
+terraform plan -out createfile.plan  
+terraform apply "createfile.plan"  
