@@ -1,4 +1,5 @@
 
+
 variable "ami" {
   description = "AMI ID for the instance"
   type        = string
@@ -9,11 +10,6 @@ variable "instance_type" {
   description = "Instance type"
   type        = string
   default     = "t2.micro"
-}
-
-variable "vpc_security_group_ids" {
-  description = "VPC security group IDs"
-  type        = list(string)
 }
 
 variable "tags" {
