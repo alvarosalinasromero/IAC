@@ -5,6 +5,7 @@ terraform state list
 terraform apply -auto-approve
 terraform apply -replace="aws_instance.server2"
 terraform destroy -auto-approve
+terraform plan -destroy
 Terraform fmt - Se utiliza para formatear el codigo
 terraform validate - Se utiliza para validar la sintaxis y la lógica del código terraform.
 
