@@ -1,6 +1,6 @@
 /*
 Lab 5: Create a MySQL database instance in AWS RDS and Azure Database for MySQL using Terraform.
-Using provider azure rm 3.0, not required a subcription ID in the provider block.
+Using provider azure rm 3.0, not required a subcription ID in the provider block.2
 */
 
 terraform {
