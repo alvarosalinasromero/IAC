@@ -13,16 +13,12 @@ terraform {
 
 # Configure token for github
 
-provider "github" {
-  token = "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"
-}
-
 # Create a repository
 
-resource "github_repository" "example1" {
-  name = "example1"
+resource "github_repository" "newrepo" {
+  name = "newrepo"
   description = "My awesome web page"
-  visibility  = "private"
+  visibility  = "public"
 
 #   pages {
 #     source {
